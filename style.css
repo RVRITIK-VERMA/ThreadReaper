@@ -1,0 +1,48 @@
+body{
+    background-color: silver;
+    height: 100vh;
+}
+.intro{
+    align-items: center;
+background: white;
+}
+.Thread{
+    text-align: center;
+background: transparent;
+    color:Red;
+}
+.projectmenu{
+    border: 2px violet;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding:15px;
+}
+.projects{
+    display: inline-block;
+    position: relative;
+}
+.dropdown{
+    position: absolute;
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a:hover{
+    background-color: #000;
+    color: #fff;
+}
+.projects:hover .dropdown{
+    display: block;
+}
+.projects:hover .projectmenu{
+    background-color: transparent;
+}
